@@ -9,7 +9,6 @@ def get_student_score():
         except ValueError:
             print("Invalid input. Please enter a numerical value.")
 
-
 def calculate_grade(score):
 
     if score >= 90:
@@ -22,13 +21,11 @@ def calculate_grade(score):
         return 'D'
     return 'F'
 
-
 def main():
 
     score = get_student_score()
     grade = calculate_grade(score)
     print(f"The student's grade is: {grade}")
-
 
 if __name__ == "__main__":
     main()
